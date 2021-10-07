@@ -17,3 +17,5 @@ for i in range(len(word)):
     car = [word[i], i]
     store.append(car)
 print("The string Characters and Indexes are: {}" .format(store))
+
+
