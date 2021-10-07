@@ -1,2 +1,3 @@
 # eliteprogrammerclub
-Elite Programming: A program that takes a string and returns the string characters and their index positions
+Elite Programming: Portfolio for the Elite Programmers Club
+Program 1: A program that takes a string and returns the string characters and their index positions
