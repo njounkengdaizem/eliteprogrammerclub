@@ -3,6 +3,11 @@
 # and their index positions,
 # for example if the input string is 'smiles' you program should
 # return [ ['s',0],['m',1],['i',2],['l',3],['e',4],['s',5] ]
+#Beginner Level
+# Return the provided string with the first letter of each word capitalized.
+# Make sure the rest of the word is in lower case.
+# For the purpose of this exercise, you should also capitalize connecting words like the and of.
+# Search and Replace
 ########################################################################
 
 # Create an empty list to contain the split characters and their index positions
@@ -19,11 +24,12 @@ def split_string(word):
     return
 
 def capitalize(word):
-    # Capitalize the beginning letters
+    """Capitalize the beginning letters"""
     capitalized = word.title()
     return capitalized
 
 def search_replace(word, old, new ):
+    """ Function replaces old with new word"""
     return word.replace(old, new)
 
 
@@ -42,6 +48,7 @@ def main():
     new_word = input("What are you replacing it with: ")
     replace = search_replace(user_input, old_word, new_word)
     print (replace)
+
 
 
 if __name__=='__main__':
