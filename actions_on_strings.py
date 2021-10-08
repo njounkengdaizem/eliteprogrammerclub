@@ -13,7 +13,6 @@
 # Create an empty list to contain the split characters and their index positions
 store = []
 
-
 def split_string(word):
     for i in range(len(word)):
         """loop that splits the string and returns a list with their indexes
