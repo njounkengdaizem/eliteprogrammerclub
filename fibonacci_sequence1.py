@@ -19,8 +19,6 @@ def fib(num):
             total = total + current
         current += previous
         previous = current - previous
-    print(list)
-    print(list[-1])
     return total
 
 
@@ -30,4 +28,6 @@ def main():
     odd_total = fib(user_input)
     print("The sum:{} " .format(odd_total))
 
-main()
+
+if __name__ == "__main__":
+    main()
