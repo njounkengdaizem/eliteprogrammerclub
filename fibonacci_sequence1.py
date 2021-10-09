@@ -8,17 +8,21 @@ def fib(num):
      computes the sum of odd fibonacci numbers in the sequence
      :param num
      """
-    num_b4 = 0  # preceeding number starting from 0
-    num_nw = 1  # current number 1
+    previous = 0  # preceeding number starting from 0
+    current = 1  # current number 1
     total = 0  # total initialized to zero
-
-    while num_nw <= num:
+    list = []
+    while current <= num:
+        list.append(current)
         """While loop computes the sum of all odd numbers in the given series"""
-        if num_nw % 2 != 0:
-            total = total + num_nw
-        num_nw = num_nw + num_b4
-        num_b4 = num_nw - num_b4
+        if current % 2 != 0:
+            total = total + current
+        current += previous
+        previous = current - previous
+    print(list)
+    print(list[-1])
     return total
+
 
 def main():
 
